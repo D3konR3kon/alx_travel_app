@@ -3,6 +3,5 @@ from .models import Listing
 
 @shared_task
 def process_listing_data():
-    # Example task
     listings_count = Listing.objects.count()
     return f"Processed {listings_count} listings"
